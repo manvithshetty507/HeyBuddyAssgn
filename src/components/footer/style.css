@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0.2rem;
+    height: 10%;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+}
+
+.footer .a_tag {
+    color: black;
+    text-decoration: none;
+    padding: 0.2rem;
+    font-size: inherit;
+}

@@ -1,0 +1,118 @@
+.signup__box {
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    height: 100vh;
+}
+
+.signup__container {
+    width: 45%;
+    margin-bottom: auto;
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-top: 1rem;
+}
+
+.signup__container > h1 {
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.image__container {
+    margin: 0.6rem 0;
+}
+
+.image__container > img {
+    max-height: 2rem;
+    object-fit: cover;
+
+}
+
+a {
+    align-self:flex-start;
+    color: rgb(0, 183, 255);
+    text-decoration: none;
+}
+
+.input__container input {
+    padding: 0.8rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+}
+
+.signup__container > h3 {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+/* date-picker */
+.date-picker-container {
+    display: flex;
+    width: 80%;
+}
+.custom_datepicker {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 0.3rem;
+}
+
+.day__container {
+    width: 35%;
+    margin: 0 0.5rem;
+}
+
+.month__container, .year__container {
+    width: 30%;
+    margin: 0 0.5rem;
+}
+
+.date-picker {
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+
+.react-datepicker__year-dropdown {
+    max-height: 150px; 
+    overflow-y:scroll;
+}
+  
+.react-datepicker__year-dropdown--scrollable {
+    max-height: 150px; 
+}
+
+.signup__button {
+    padding: 0.8rem;
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+    align-self: center;
+    border: none;
+    background-color: #1DA1F2;
+    color: #fff;
+    margin: 1.5rem 0;
+}
+
+.signup__container p {
+    text-align: left;
+    margin: 1rem 0rem;
+}
+ 
+
+@media(max-width:600px) {
+    .signup__container {
+        width: auto;
+        height: auto;
+    }
+}
