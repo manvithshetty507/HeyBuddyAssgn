@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 function LandingPage() {
 
   return (
-    
+    // All of landing page inside this main tag
     <main className='landing__page'>
 
     <section className="landing__right">
@@ -29,6 +29,7 @@ function LandingPage() {
                     <h3>Join Twitter Today</h3>
                 </div>
                 
+                {/* make a comonents for all the login boxes */}
                 <ProviderBox imageSrc={gLogo} label="Sign up with Google"/>
                 <ProviderBox imageSrc={aLogo} label="Sign up with Apple"/>
                 <ProviderBox label="Sign up with phone or email"/>

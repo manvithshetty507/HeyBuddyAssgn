@@ -104,6 +104,11 @@ a {
     margin: 1.5rem 0;
 }
 
+.signup__button:active {
+    background-color: #fff;
+    color: #1DA1F2;
+}
+
 .signup__container p {
     text-align: left;
     margin: 1rem 0rem;

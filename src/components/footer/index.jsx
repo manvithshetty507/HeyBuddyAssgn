@@ -18,7 +18,7 @@ function Footer() {
       <a href="#" className='a_tag'>Marketing</a>
       <a href="#" className='a_tag'>Developers</a>
       <a href="#" className='a_tag'>Settings</a>
-      <span style={{padding:'0.2rem', fontSize:'0.8rem'}}>©2021 Twitter, Inc</span>
+      <span style={{padding:'0.2rem', fontSize:'0.8rem', cursor:'default'}}>©2021 Twitter, Inc</span>
     </footer>
   );
 }

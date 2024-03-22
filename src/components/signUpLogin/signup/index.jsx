@@ -5,6 +5,9 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './style.css';
 
 function SignUp() {
+  const[user, setUser] = useState('')
+  const [phone, setPhone] = useState('')
+
   const [selectedDay, setSelectedDay] = useState(null);
   const [selectedMonth, setSelectedMonth] = useState(null);
   const [selectedYear, setSelectedYear] = useState(null);
@@ -21,6 +24,22 @@ function SignUp() {
     setSelectedYear(date);
   };
 
+  const handleSignup = () => {
+    if(user && phone && selectedDay && selectedMonth  && selectedYear) {
+      //handle signup
+      setUser('')
+      setPhone('')
+      setSelectedDay('')
+      setSelectedMonth('')
+      setSelectedYear('')
+      alert("SUCESS")
+    }
+    else {
+      //alert to fill deatils
+      alert("Fill all details")
+    }
+  }
+
   return (
     <div className='signup__box'>
       <div className="signup__container">
@@ -31,8 +50,20 @@ function SignUp() {
         <h1>Create an account</h1>
 
         <div className="input__container">
-          <input type="text" placeholder='Name' name='email' id='email' />
-          <input type="text" placeholder='phone number' />
+          <input 
+            type="text" 
+            placeholder='Name' 
+            name='email' 
+            id='email' 
+            value={user}
+            onChange={e => setUser(e.target.value)}
+          />
+          <input 
+            type="text" 
+            placeholder='phone number' 
+            value={phone}
+            onChange={e => setPhone(e.target.value)}
+          />
         </div>
 
         <a href="#email">use email</a>
@@ -75,7 +106,7 @@ function SignUp() {
           </div>
         </div>
 
-        <button className='signup__button'>Sign up</button>
+        <button className='signup__button' onClick={handleSignup}>Sign up</button>
       </div>
     </div>
   );
