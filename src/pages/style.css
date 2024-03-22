@@ -40,6 +40,11 @@
     cursor: default;
 }
 
+.container a {
+    color: inherit;
+    font-size: inherit;
+}
+
 .container > .headings {
     text-align: left;
 }

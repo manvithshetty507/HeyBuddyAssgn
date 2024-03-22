@@ -32,7 +32,7 @@ function LandingPage() {
                 {/* make a comonents for all the login boxes */}
                 <ProviderBox imageSrc={gLogo} label="Sign up with Google"/>
                 <ProviderBox imageSrc={aLogo} label="Sign up with Apple"/>
-                <ProviderBox label="Sign up with phone or email"/>
+                <Link to="/signup"><ProviderBox label="Sign up with phone or email"/></Link>
 
                 <p className='privacy__terms'>By signing up you agree to the <a >terms of service</a> and <a>Privacy policy</a>, including <a>cookies use</a></p>
                 <p className='privacy__terms'>Already have an account? <Link to="/login">Login</Link></p>
